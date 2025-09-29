@@ -16,6 +16,7 @@ public class Main {
                 } else if (size == 2) {
                     price = 8.95;
                 } else {
+                    System.out.println(" Invalid input");
                     System.out.println(" Please go back and choose a size");
                 }
                 //
@@ -56,7 +57,7 @@ public class Main {
                 double discountPrice = price * discount;
                 double finalPrice = price - discount;
 
-                System.out.println("\n--------------");
+                System.out.println("\n--- Order Summary ---");
                 System.out.printf("Subtotal: $%.2f%n", price);
                 if (discount > 0) {
                 System.out.printf("Discount: -$%.2f%n", discount);
